@@ -62,7 +62,7 @@ namespace IotTelemetryFunction
                             Value = element.GetProperty("Value").GetDouble(),
                             Timestamp = element.GetProperty("Timestamp").GetDateTime(),
                             Source = element.GetProperty("Source").GetString() ?? "Unknown",
-                            ProcessedAt = DateTime.UtcNow
+                            Processed = DateTime.UtcNow
                         };
 
                         flattenedDocuments.Add(doc);
@@ -87,6 +87,6 @@ namespace IotTelemetryFunction
         public double Value { get; set; }
         public DateTime Timestamp { get; set; }
         public string Source { get; set; } = string.Empty;
-        public DateTime ProcessedAt { get; set; } = DateTime.UtcNow;
+        public DateTime Processed { get; set; } = DateTime.UtcNow;
     }
 }
