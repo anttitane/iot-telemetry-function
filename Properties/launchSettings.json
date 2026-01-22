@@ -1,0 +1,9 @@
+{
+  "profiles": {
+    "iot_telemetry_function": {
+      "commandName": "Project",
+      "commandLineArgs": "--port 7189",
+      "launchBrowser": false
+    }
+  }
+}
